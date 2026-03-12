@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bodyDiv {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../src/assest/cityImage.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navBar{
+  background-color: transparent;
+  color: #fdf0d5;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+}
+.navBar h1{
+  font-size: 50px;
+  font-weight:100;
+
+}
+
+
+.weatherContainer{
+  /* width: 350px; */
+  /* height: 500px; */
+  font-family: "Poppins", sans-serif;
+  padding: 2rem;
+  border: 1px solid rgb(198, 190, 190);
+  border-radius: 15px;
+  display: flex;
+  backdrop-filter: blur(3px);
+  background:rgba(255, 255, 255,0.1);
+
+  flex-direction: column;
+    align-items: center;
+
+  
+
+}
+
+.searchBox{
+  width: 100%;
+  /* border: solid; */
+  display: flex;
+  align-items: center;
+}
+.searchBox input{
+  border: none;
+  outline: none;
+  width: 100%;
+  margin-right: 8px;
+  height: 40px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(41, 28, 28);
+}
+.searchBox button{
+  background-color: white;
+  border-radius: 50%;
+  width:40px ;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.temIcon{
+ 
+  margin-top: 20px;
+}
+.temIcon img{
+  width: 100px;
+}
+
+.temData{
+  font-size: 45px;
+  gap: 8px;
+  display: flex;
+  font-weight: 500;
+  color: rgb(29, 20, 20);
+}
+
+.locationBox {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.weatherData{
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.col{
+  margin-top: 20px;
+   display: flex;
+   gap: 9px;
+}
+
+.col i{
+  font-size: 24px;
+}
+.col span{
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+.col p{
+  font-weight: 500;
+  font-size: 14px;
+}
