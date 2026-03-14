@@ -1,4 +1,5 @@
 import React from "react";
+import ShowError from "./ShowError";
 
 const Weather = ({ data }) => {
   return (
@@ -46,6 +47,8 @@ const Weather = ({ data }) => {
             </div>
           </div>
         </>
+      ) : data === null ? (
+        <ShowError />
       ) : (
         <></>
       )}

@@ -16,8 +16,8 @@ function App() {
       if (response.ok) {
         setData(await response.json());
       } else {
-        alert("Something Went Wrong.... // ....Enter Correct City Name");
-        setData(false);
+        // alert("Something Went Wrong.... // ....Enter Correct City Name");
+        setData(null);
       }
     } catch (error) {
       console.error(error);
